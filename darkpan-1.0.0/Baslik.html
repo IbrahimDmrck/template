@@ -36,7 +36,7 @@
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Yükleniyor...</span>
+                <span class="sr-only">Loading...</span>
             </div>
         </div>
         <!-- Spinner End -->
@@ -59,10 +59,10 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="index.html" class="nav-item nav-link active"><i class="fa fa-home me-2"></i>Ana Sayfa</a>                   
+                    <a href="index.html" class="nav-item nav-link "><i class="fa fa-home me-2"></i>Ana Sayfa</a>                   
                     <a href="kongreler.html" class="nav-link " ><i class="fa fa-th  me-2"></i>Kongreler</a>                   
                     <a href="yenikongre.html" class="nav-item nav-link"><i class="fa fa-plus me-2"></i>Kongre Oluştur</a>
-                    <a href="Baslik.html" class="nav-item nav-link"><i class="fa fa-text-height me-2"></i>Başlıklar</a>
+                    <a href="Baslik.html" class="nav-item nav-link active"><i class="fa fa-text-height me-2"></i>Başlıklar</a>
                     <a href="BaslikEkle.html" class="nav-item nav-link"><i class="fa bi-file-earmark-plus-fill me-2"></i>Başlık Oluştur</a>
                     <a href="Duyurular.html" class="nav-item nav-link"><i class="fa fa-bell me-2"></i>Duyurular</a>
                     <a href="DuyuruEkle.html" class="nav-item nav-link"><i class="fa fa-plus-square me-2"></i>Duyuru Oluştur</a>
@@ -98,46 +98,81 @@
             </nav>
             <!-- Navbar End -->
 
-            <!-- Widgets Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row g-4">
-                    <div class="col-12 col-md-6">
-                        <div class="bg-secondary rounded h-100 p-4">
-                            <h4 class="mb-4 text-center">ST.PETERSBURG - RUSSIA</h4>
-                            <h6 class="mb-4 text-center">07-09 JULY 2020</h6>
-                            <div class="owl-carousel testimonial-carousel">
-                                <div class="testimonial-item text-center">
-                                    <img class="img-fluid  mx-auto mb-4" src="img/kongre.jpg" style="width: 400px; height: 600px;">
-                                    <h6 class="mb-1">IV. ICONTRENDS</h6>                              
-                                </div>
-                               
-                            </div>
-                        </div>
+
+            <!-- Blank Start -->
+            <div class="col-11  m-4 ">
+                <div class="bg-secondary rounded h-100 p-4">
+                    <h6 class="mb-4">Başlıklar</h6>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Konu Adı</th>
+                                    <th scope="col">Konu Açıklaması</th>
+                                    <th scope="col">Sil</th>
+                                    <th scope="col">Güncelle</th>
+                                   
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Lorem ipsum</td>
+                                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae facilis ex cupiditate similique ducimus perferendis recusandae totam, adipisci nihil nisi</td>
+                                    <td><a href="#" class="btn btn-outline-primary">Sil</a></td>
+                                    <td><a href="#" class="btn btn-outline-warning">Güncelle</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Lorem ipsum</td>
+                                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae facilis ex cupiditate similique ducimus perferendis recusandae totam, adipisci nihil nisi</td>
+                                    <td><a href="#" class="btn btn-outline-primary">Sil</a></td>
+                                    <td><a href="#" class="btn btn-outline-warning">Güncelle</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Lorem ipsum</td>
+                                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae facilis ex cupiditate similique ducimus perferendis recusandae totam, adipisci nihil nisi</td>
+                                    <td><a href="#" class="btn btn-outline-primary">Sil</a></td>
+                                    <td><a href="#" class="btn btn-outline-warning">Güncelle</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Lorem ipsum</td>
+                                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae facilis ex cupiditate similique ducimus perferendis recusandae totam, adipisci nihil nisi</td>
+                                    <td><a href="#" class="btn btn-outline-primary">Sil</a></td>
+                                    <td><a href="#" class="btn btn-outline-warning">Güncelle</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Lorem ipsum</td>
+                                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae facilis ex cupiditate similique ducimus perferendis recusandae totam, adipisci nihil nisi</td>
+                                    <td><a href="#" class="btn btn-outline-primary">Sil</a></td>
+                                    <td><a href="#" class="btn btn-outline-warning">Güncelle</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Lorem ipsum</td>
+                                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae facilis ex cupiditate similique ducimus perferendis recusandae totam, adipisci nihil nisi</td>
+                                    <td><a href="#" class="btn btn-outline-primary">Sil</a></td>
+                                    <td><a href="#" class="btn btn-outline-warning">Güncelle</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>Lorem ipsum</td>
+                                    <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae facilis ex cupiditate similique ducimus perferendis recusandae totam, adipisci nihil nisi</td>
+                                    <td><a href="#" class="btn btn-outline-primary">Sil</a></td>
+                                    <td><a href="#" class="btn btn-outline-warning">Güncelle</a></td>
+                                </tr>
+                            </tbody>
+                        </table>  
+                        <a href="BaslikEkle.html" type="button" class="btn btn-outline-success mt-3">Yeni Başlık Oluştur</a>    
                     </div>
-                    <div class="col-12 col-xl-6">
-                        <div class="bg-secondary rounded h-100 p-4">
-                            <h4 class="mb-4 text-center">ST.PETERSBURG - RUSSIA</h4>
-                            <h6 class="mb-4 text-center">07-09 JULY 2020</h6>
-                            <div class="owl-carousel testimonial-carousel">
-                                <div class="testimonial-item text-center">
-                                    <img class="img-fluid  mx-auto mb-4" src="img/kongree.jpg" style="width: 400px; height: 600px;">
-                                    <h6 class="mb-1">XI. IMCOFE</h6>                              
-                                </div>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-xl-4">
-                        <div class="h-100 bg-secondary rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Takvim</h6>                          
-                            </div>
-                            <div id="calender"></div>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
-            <!-- Widgets End -->
+            <!-- Blank End -->
 
 
             <!-- Footer Start -->

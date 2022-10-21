@@ -36,7 +36,7 @@
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Yükleniyor...</span>
+                <span class="sr-only">Loading...</span>
             </div>
         </div>
         <!-- Spinner End -->
@@ -59,9 +59,9 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="index.html" class="nav-item nav-link active"><i class="fa fa-home me-2"></i>Ana Sayfa</a>                   
+                    <a href="index.html" class="nav-item nav-link "><i class="fa fa-home me-2"></i>Ana Sayfa</a>                   
                     <a href="kongreler.html" class="nav-link " ><i class="fa fa-th  me-2"></i>Kongreler</a>                   
-                    <a href="yenikongre.html" class="nav-item nav-link"><i class="fa fa-plus me-2"></i>Kongre Oluştur</a>
+                    <a href="yenikongre.html" class="nav-item nav-link active"><i class="fa fa-plus me-2"></i>Kongre Oluştur</a>
                     <a href="Baslik.html" class="nav-item nav-link"><i class="fa fa-text-height me-2"></i>Başlıklar</a>
                     <a href="BaslikEkle.html" class="nav-item nav-link"><i class="fa bi-file-earmark-plus-fill me-2"></i>Başlık Oluştur</a>
                     <a href="Duyurular.html" class="nav-item nav-link"><i class="fa fa-bell me-2"></i>Duyurular</a>
@@ -98,46 +98,59 @@
             </nav>
             <!-- Navbar End -->
 
-            <!-- Widgets Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row g-4">
-                    <div class="col-12 col-md-6">
-                        <div class="bg-secondary rounded h-100 p-4">
-                            <h4 class="mb-4 text-center">ST.PETERSBURG - RUSSIA</h4>
-                            <h6 class="mb-4 text-center">07-09 JULY 2020</h6>
-                            <div class="owl-carousel testimonial-carousel">
-                                <div class="testimonial-item text-center">
-                                    <img class="img-fluid  mx-auto mb-4" src="img/kongre.jpg" style="width: 400px; height: 600px;">
-                                    <h6 class="mb-1">IV. ICONTRENDS</h6>                              
-                                </div>
-                               
-                            </div>
+
+            <!-- Blank Start -->
+            <div class="col-11 m-4">
+                <div class="bg-secondary rounded h-100 p-4">
+                    <h6 class="mb-4">Kongre Oluştur</h6>
+                    <form> 
+                        <div class="mb-3">
+                            <label for="kongreadı" class="form-label">Kongre Adı</label>
+                            <input type="text" class="form-control" id="kongreadı">
                         </div>
-                    </div>
-                    <div class="col-12 col-xl-6">
-                        <div class="bg-secondary rounded h-100 p-4">
-                            <h4 class="mb-4 text-center">ST.PETERSBURG - RUSSIA</h4>
-                            <h6 class="mb-4 text-center">07-09 JULY 2020</h6>
-                            <div class="owl-carousel testimonial-carousel">
-                                <div class="testimonial-item text-center">
-                                    <img class="img-fluid  mx-auto mb-4" src="img/kongree.jpg" style="width: 400px; height: 600px;">
-                                    <h6 class="mb-1">XI. IMCOFE</h6>                              
-                                </div>
-                               
-                            </div>
+                        <div class="mb-3">
+                            <label for="kongrehakkında" class="form-label">Kongre Hakkında</label>
+                           <textarea id="kongrehakkında" class="form-control"></textarea>
                         </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-xl-4">
-                        <div class="h-100 bg-secondary rounded p-4">
-                            <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Takvim</h6>                          
-                            </div>
-                            <div id="calender"></div>
+                        <div class="mb-3">
+                            <label for="kongresehri" class="form-label">Kongre Şehri</label>
+                            <input type="text" class="form-control" id="kongresehri">
                         </div>
-                    </div>
+                        <div class="mb-3">
+                            <label for="kongreyeri" class="form-label">Kongre Yeri</label>
+                            <input type="text" class="form-control" id="kongreyeri">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Kongre Giriş Görseli</label>
+                            <input class="form-control bg-dark" type="file" id="formFile">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formFile" class="form-label">Kongre Ana Görseli</label>
+                            <input class="form-control bg-dark" type="file" id="formFile">
+                        </div>
+                        <div class="mb-3">
+                            <label for="kongretarihi" class="form-label">Kongre Başlama tarihi</label>
+                            <input type="datetime-local" class="form-control  bg-white" id="kongretarihi">
+                        </div>
+                        <div class="mb-3">
+                            <label for="kongretarihi" class="form-label">Kongre Bitiş tarihi</label>
+                            <input type="datetime-local" class="form-control  bg-white" id="kongretarihi">
+                        </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="floatingSelect"
+                                aria-label="Floating label select example">
+                                <option selected>Kongre Durumunu Seçin</option>
+                                <option value="1">Aktif</option>
+                                <option value="2">Pasif</option>                        
+                            </select>
+                            <label for="floatingSelect">Kongre Durumu</label>
+                        </div>
+                     
+                        <button type="submit" class="btn btn-success">Kongre Oluştur</button>
+                    </form>
                 </div>
             </div>
-            <!-- Widgets End -->
+            <!-- Blank End -->
 
 
             <!-- Footer Start -->
